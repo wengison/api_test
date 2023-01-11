@@ -16,7 +16,7 @@ const connectToMongo = async () => {
     try {
       await mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true });
       console.log('connected to MongoDB');
-      app.listen(3001, ()=> console.log('Server running'))
+      app.listen(process.env.PORT||3000, ()=> console.log('Server running'))
     } catch(error) {
       console.log('error connection to MongoDB:', error.message);
     }
