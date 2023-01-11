@@ -1,11 +1,10 @@
 require('dotenv').config()
 
-const { MongoClient } = require('mongodb');
 const express = require('express')
 const mongoose = require('mongoose')
 const routes = require('./routes/todoRoutes')
 
-//
+// //
 
 //app
 const app = express()
