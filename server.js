@@ -10,7 +10,7 @@ const routes = require('./routes/todoRoutes')
 //app
 const app = express()
 
-const client = new MongoClient(uri);
+
 
 //midlleware 
 app.use(express.json()) //-> 'req.body'
